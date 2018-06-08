@@ -31,15 +31,11 @@ function hexAnd(n, ...argv) {
     return n;
 }
 exports.hexAnd = hexAnd;
-function hexOr(n, ...argv) {
-    for (let v of argv) {
-        n |= v;
-    }
-    return n;
-}
-exports.hexOr = hexOr;
-function toHex(p, padLen = 4) {
-    return '0x' + p
+/**
+ * hex => hex string
+ */
+function toHex(p, padLen = 4, prefix = '0x') {
+    return prefix + p
         .toString(16)
         .padStart(padLen || 0, '0')
         .toUpperCase();
@@ -67,6 +63,10 @@ function hexSub(n, ...argv) {
     return n;
 }
 exports.hexSub = hexSub;
+/**
+ * check if n include v, or n === r
+ * by default r = n
+ */
 function hexHas(n, v, r) {
     if (typeof r === 'undefined' || r === null) {
         r = n;

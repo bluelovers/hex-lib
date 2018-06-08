@@ -2,7 +2,7 @@
  * Created by user on 2018/6/8/008.
  */
 
-import { hexAndAny, toHex, hexAnd, hexOr, hexAdd, hexSub, hexAndSub } from '../index';
+import { hexAndAny, toHex, hexAnd, hexAdd, hexSub, hexAndSub } from '../index';
 import POSTAG from './_postag';
 
 let r;
