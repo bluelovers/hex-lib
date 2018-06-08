@@ -1,0 +1,35 @@
+{
+  "name": "hex-lib",
+  "version": "1.0.0",
+  "description": "hex calc func",
+  "keywords": [
+    "add",
+    "and",
+    "calc",
+    "has",
+    "helper",
+    "hex",
+    "include",
+    "not",
+    "or",
+    "sub",
+    "util"
+  ],
+  "homepage": "https://github.com/bluelovers/hex-lib#readme",
+  "bugs": {
+    "url": "https://github.com/bluelovers/hex-lib/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bluelovers/hex-lib.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "npx mocha-benchmark2 \"!(node_modules|demo)/**/*.+(test|spec).js\""
+  }
+}
