@@ -19,3 +19,9 @@ test
 .gitkeep
 
 /.*
+### jsonly_bin template
+bin/*.ts
+bin/*.d.ts
+### jsonly template
+*.ts
+!*.d.ts
